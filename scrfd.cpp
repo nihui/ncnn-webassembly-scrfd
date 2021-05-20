@@ -14,10 +14,8 @@
 
 #include "scrfd.h"
 
-#include <opencv2/core/core.hpp>
-#include <opencv2/imgproc/imgproc.hpp>
-
-#include "cpu.h"
+#include <cpu.h>
+#include <simpleocv.h>
 
 static inline float intersection_area(const FaceObject& a, const FaceObject& b)
 {

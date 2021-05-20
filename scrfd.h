@@ -15,9 +15,8 @@
 #ifndef SCRFD_H
 #define SCRFD_H
 
-#include <opencv2/core/core.hpp>
-
 #include <net.h>
+#include <simpleocv.h>
 
 struct FaceObject
 {
