@@ -376,7 +376,7 @@ int SCRFD::draw(cv::Mat& rgba, const std::vector<FaceObject>& faceobjects)
 //         fprintf(stderr, "%.5f at %.2f %.2f %.2f x %.2f\n", obj.prob,
 //                 obj.rect.x, obj.rect.y, obj.rect.width, obj.rect.height);
 
-        cv::rectangle(rgba, obj.rect, cv::Scalar(0, 255, 0, 255));
+        cv::rectangle(rgba, cv::Rect(obj.rect.x, obj.rect.y, obj.rect.width, obj.rect.height), cv::Scalar(0, 255, 0, 255));
 
         char text[256];
         sprintf(text, "%.1f%%", obj.prob * 100);
